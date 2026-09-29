@@ -6,7 +6,7 @@ import GlobalReach from '@/components/GlobalReach';
 import Process from '@/components/Process';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Testimonials from '@/components/Testimonials';
-import Contact from '@/components/Contact';
+import ContactWithGlobe from '@/components/ui/contact-with-globe';
 import Footer from '@/components/Footer';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Process />
         <WhyChooseUs />
         <Testimonials />
-        <Contact />
+        <ContactWithGlobe />
       </main>
       <Footer />
     </div>

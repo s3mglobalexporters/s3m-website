@@ -3,13 +3,21 @@ import { ArrowRight, Truck, Globe2, Sprout } from 'lucide-react';
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
+      {/* Background video */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.pexels.com/photos/868110/pexels-photo-868110.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Colorful assortment of fresh fruits and vegetables at a market"
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="https://images.pexels.com/photos/868110/pexels-photo-868110.jpeg?auto=compress&cs=tinysrgb&w=1920"
           className="w-full h-full object-cover"
-        />
+        >
+          <source
+            src="https://videos.pexels.com/video-files/37284475/15794944_2560_1440_60fps.mp4"
+            type="video/mp4"
+          />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-primary-950/85 via-primary-900/70 to-primary-800/40" />
       </div>
 
