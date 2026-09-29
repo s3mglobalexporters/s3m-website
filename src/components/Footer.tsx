@@ -87,15 +87,13 @@ export default function Footer() {
       {/* Content */}
       <div className="relative z-20 max-w-5xl mx-auto px-6 pt-24 pb-28 md:pt-32 md:pb-32 flex flex-col items-center text-center">
         {/* Brand */}
-        <a href="#home" className="flex items-center gap-3 mb-6">
-          <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-olive-600 text-white">
-            <Leaf className="w-6 h-6" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-display text-2xl font-bold leading-none">S3M</span>
-            <span className="text-[10px] tracking-[0.2em] uppercase text-cream-300">
-              Global Exporters
-            </span>
+        <a href="#home" className="flex items-center justify-center mb-6" aria-label="S3M Global Exporters Home">
+          <div className="flex items-center justify-center transition-transform hover:scale-110">
+            <img
+              src="/s3mlogo.png"
+              alt="S3M Logo"
+              className="w-48 h-48 object-contain"
+            />
           </div>
         </a>
 

@@ -1,23 +1,49 @@
 import { ArrowRight, Truck, Globe2, Sprout } from 'lucide-react';
+import { useState, useEffect } from 'react';
+
+const HERO_IMAGES = [
+  {
+    url: 'https://images.pexels.com/photos/22156653/pexels-photo-22156653.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    alt: 'Aerial view of a cabbage farm',
+  },
+  {
+    url: 'https://images.pexels.com/photos/30309037/pexels-photo-30309037.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    alt: 'Vibrant cluster of ripe tomatoes on the vine',
+  },
+  {
+    url: 'https://images.pexels.com/photos/28387811/pexels-photo-28387811.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    alt: 'Apple orchard with a dirt path',
+  },
+];
 
 export default function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % HERO_IMAGES.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background video */}
+      {/* Background Image Carousel */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="https://images.pexels.com/photos/868110/pexels-photo-868110.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          className="w-full h-full object-cover"
-        >
-          <source
-            src="https://videos.pexels.com/video-files/37284475/15794944_2560_1440_60fps.mp4"
-            type="video/mp4"
-          />
-        </video>
+        {HERO_IMAGES.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={image.url}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-950/85 via-primary-900/70 to-primary-800/40" />
       </div>
 
