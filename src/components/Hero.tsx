@@ -56,14 +56,14 @@ export default function Hero() {
           </div>
 
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 animate-fade-in-up text-balance">
-            Fresh from the farm,
+            Fresh from India,
             <span className="block text-cream-300">delivered to the world.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl animate-fade-in-up">
-            S3M Global Exporters connects growers and markets across three continents. We source
-            seasonal fruits and vegetables at peak freshness and move them through a
-            temperature-controlled supply chain straight to your warehouse.
+            S3M Global Exporters helps importers, wholesalers, distributors, retailers, and HORECA
+            buyers source export-ready Indian fruits and vegetables through a clear, dependable
+            temperature-controlled supply chain.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">

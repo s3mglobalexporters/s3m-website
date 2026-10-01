@@ -1,4 +1,4 @@
-import { ShieldCheck, Clock, Award, Headphones, Leaf, DollarSign } from 'lucide-react';
+import { ShieldCheck, Clock, Award, ClipboardCheck, Leaf, DollarSign } from 'lucide-react';
 
 const features = [
   {
@@ -17,9 +17,9 @@ const features = [
     description: 'A dedicated supply manager per produce category who knows the harvest calendar and import rules cold.',
   },
   {
-    icon: Headphones,
-    title: 'Real-Time Tracking',
-    description: 'Temperature logger data and shipment status available through a client portal, updated at every checkpoint.',
+    icon: ClipboardCheck,
+    title: 'Export Documentation',
+    description: 'We prepare the certificates, origin documents, and destination paperwork needed to keep every shipment moving.'
   },
   {
     icon: Leaf,

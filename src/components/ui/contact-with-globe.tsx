@@ -705,7 +705,12 @@ export default function ContactWithGlobe({
     name: "",
     email: "",
     company: "",
+    country: "",
+    phone: "",
     product: "",
+    quantity: "",
+    destination: "",
+    packaging: "",
     message: "",
   });
 
@@ -714,7 +719,18 @@ export default function ContactWithGlobe({
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ name: "", email: "", company: "", product: "", message: "" });
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        country: "",
+        phone: "",
+        product: "",
+        quantity: "",
+        destination: "",
+        packaging: "",
+        message: "",
+      });
     }, 4000);
   };
 
@@ -909,14 +925,59 @@ export default function ContactWithGlobe({
                     className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
                   >
                     <option value="">Select a category</option>
-                    <option value="citrus">Citrus</option>
-                    <option value="pome">Pome Fruit (Apples, Pears)</option>
-                    <option value="grapes">Grapes</option>
-                    <option value="tropical">Tropical Fruit</option>
-                    <option value="root">Root Vegetables</option>
-                    <option value="leafy">Leafy & Salad</option>
+                    <option value="fresh-fruits">Fresh Fruits</option>
+                    <option value="fresh-vegetables">Fresh Vegetables</option>
+                    <option value="plantation-products">Plantation Products</option>
+                    <option value="spices-agri">Spices & Agri Products</option>
+                    <option value="fish-seafood">Fish & Seafood</option>
+                    <option value="custom-sourcing">Custom Sourcing</option>
                     <option value="mixed">Mixed / Multiple</option>
                   </select>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="flex flex-col gap-2">
+                    <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
+                      Quantity / Unit *
+                    </label>
+                    <input
+                      type="text"
+                      name="quantity"
+                      required
+                      value={formData.quantity}
+                      onChange={handleChange}
+                      placeholder="10 MT / 500 cartons"
+                      className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
+                      Destination *
+                    </label>
+                    <input
+                      type="text"
+                      name="destination"
+                      required
+                      value={formData.destination}
+                      onChange={handleChange}
+                      placeholder="Port or delivery city"
+                      className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
+                    Packaging Preference
+                  </label>
+                  <input
+                    type="text"
+                    name="packaging"
+                    value={formData.packaging}
+                    onChange={handleChange}
+                    placeholder="Cartons, crates, bags, or buyer specification"
+                    className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
+                  />
                 </div>
 
                 <div className="flex flex-col gap-2">
@@ -929,10 +990,15 @@ export default function ContactWithGlobe({
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Include volume, destination port, and delivery timeline..."
+                    placeholder="Include variety, quality grade, delivery timeline, or any compliance requirements..."
                     className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 resize-none transition-all duration-200"
                   />
                 </div>
+
+                <label className="flex items-start gap-3 text-xs text-gray-500">
+                  <input type="checkbox" required className="mt-0.5 accent-olive-600" />
+                  <span>I agree to be contacted about this quote request.</span>
+                </label>
 
                 <Button className="w-fit h-11 px-8 rounded-xl font-semibold text-sm bg-accent-600 hover:bg-accent-700 text-white group">
                   Send Request

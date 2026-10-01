@@ -24,8 +24,8 @@ const footerLinks = [
     links: [
       { label: 'Request a Quote', href: '#contact' },
       { label: 'Seasonal Calendar', href: '#produce' },
-      { label: 'Certifications', href: '#' },
-      { label: 'Track Shipment', href: '#' },
+      { label: 'Quality & Process', href: '#cold-chain' },
+      { label: 'Request a Quote', href: '#contact' },
     ],
   },
 ];

@@ -1,7 +1,7 @@
 import { Sprout, Snowflake, Globe2, Leaf } from 'lucide-react';
 
 const stats = [
-  { value: '120+', label: 'Partner Farms', sub: 'Across 3 continents' },
+  { value: '120+', label: 'Partner Farms', sub: 'Across India' },
   { value: '40K+', label: 'Tons / Year', sub: 'Fresh produce moved' },
   { value: '35+', label: 'Destination Markets', sub: 'Weekly departures' },
   { value: '98.6%', label: 'Fresh-on-Arrival', sub: 'Independently audited' },
@@ -51,7 +51,7 @@ export default function About() {
                   <Leaf className="w-5 h-5" />
                 </div>
                 <span className="text-cream-200 text-sm font-medium tracking-wider uppercase">
-                  Packing House, Nairobi
+                  Sourcing & Packing, India
                 </span>
               </div>
               <p className="text-white font-display text-xl md:text-2xl max-w-xl leading-snug">
