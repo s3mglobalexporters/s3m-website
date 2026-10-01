@@ -850,10 +850,10 @@ export default function ContactWithGlobe({
                   </svg>
                 </div>
                 <h3 className="font-display text-2xl font-bold text-primary-900 mb-3">
-                  Quote request sent.
+                  Thanks for your request.
                 </h3>
                 <p className="text-gray-500 max-w-sm">
-                  Our team will respond with a detailed quote within 24 hours.
+                  Our team will review your requirements and follow up with the right sourcing and export information.
                 </p>
               </div>
             ) : (
@@ -912,6 +912,36 @@ export default function ContactWithGlobe({
                     placeholder="john@company.com"
                     className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
                   />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="flex flex-col gap-2">
+                    <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
+                      Country *
+                    </label>
+                    <input
+                      type="text"
+                      name="country"
+                      required
+                      value={formData.country}
+                      onChange={handleChange}
+                      placeholder="United Arab Emirates"
+                      className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
+                      WhatsApp / Phone
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="+971 50 000 0000"
+                      className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
+                    />
+                  </div>
                 </div>
 
                 <div className="flex flex-col gap-2">

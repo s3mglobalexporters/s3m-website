@@ -52,7 +52,7 @@ export default function Hero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white/90 text-sm mb-8 animate-fade-in-down">
             <span className="w-2 h-2 rounded-full bg-olive-400 animate-pulse" />
-            GlobalG.A.P. Certified · Cold-Chain Ready
+            Quality-led sourcing · Cold-chain ready
           </div>
 
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 animate-fade-in-up text-balance">
@@ -87,23 +87,23 @@ export default function Hero() {
             <div>
               <div className="flex items-center gap-2 text-cream-300 mb-1">
                 <Globe2 className="w-5 h-5" />
-                <span className="text-3xl font-bold text-white">35+</span>
+                <span className="text-3xl font-bold text-white">India</span>
               </div>
-              <p className="text-sm text-white/60">Destination Markets</p>
+              <p className="text-sm text-white/60">Sourcing Base</p>
             </div>
             <div>
               <div className="flex items-center gap-2 text-cream-300 mb-1">
                 <Truck className="w-5 h-5" />
-                <span className="text-3xl font-bold text-white">48h</span>
+                <span className="text-3xl font-bold text-white">B2B</span>
               </div>
-              <p className="text-sm text-white/60">Avg. Transit Time</p>
+              <p className="text-sm text-white/60">Buyer Focus</p>
             </div>
             <div>
               <div className="flex items-center gap-2 text-cream-300 mb-1">
                 <Sprout className="w-5 h-5" />
-                <span className="text-3xl font-bold text-white">120+</span>
+                <span className="text-3xl font-bold text-white">Cold</span>
               </div>
-              <p className="text-sm text-white/60">Partner Farms</p>
+              <p className="text-sm text-white/60">Chain Ready</p>
             </div>
           </div>
         </div>

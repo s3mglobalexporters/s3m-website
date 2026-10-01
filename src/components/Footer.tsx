@@ -98,8 +98,7 @@ export default function Footer() {
         </a>
 
         <p className="text-white/70 leading-relaxed max-w-md mb-10">
-          Fresh fruit and vegetable export from farm-direct sourcing to cold-chain delivery.
-          Serving 35+ markets across five regions.
+          Fresh fruit and vegetable export from India, with sourcing, documentation, and cold-chain support for international buyers.
         </p>
 
         {/* Contact info */}

@@ -1,10 +1,10 @@
 import { Sprout, Snowflake, Globe2, Leaf } from 'lucide-react';
 
 const stats = [
-  { value: '120+', label: 'Partner Farms', sub: 'Across India' },
-  { value: '40K+', label: 'Tons / Year', sub: 'Fresh produce moved' },
-  { value: '35+', label: 'Destination Markets', sub: 'Weekly departures' },
-  { value: '98.6%', label: 'Fresh-on-Arrival', sub: 'Independently audited' },
+  { value: 'India', label: 'Sourcing Base', sub: 'Produce-led export partner' },
+  { value: 'Fresh', label: 'Core Focus', sub: 'Fruits and vegetables' },
+  { value: 'B2B', label: 'Buyer Focus', sub: 'Importers and distributors' },
+  { value: 'Cold', label: 'Chain Ready', sub: 'Quality-led handling' },
 ];
 
 export default function About() {

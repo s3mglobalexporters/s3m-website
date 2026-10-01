@@ -3,13 +3,13 @@ import { ShieldCheck, Clock, Award, ClipboardCheck, Leaf, DollarSign } from 'luc
 const features = [
   {
     icon: ShieldCheck,
-    title: 'GlobalG.A.P. Certified',
-    description: 'Every partner farm is audited annually. We maintain full traceability from pallet back to field lot.',
+    title: 'Quality & Compliance',
+    description: 'We organize sourcing, grading, documentation, and handling around the requirements of the destination market.'
   },
   {
     icon: Clock,
-    title: '48-Hour Average Transit',
-    description: 'Air freight for premium perishables, reefer containers for the rest. We pick the route that fits the shelf life.',
+    title: 'Planned Cold Chain',
+    description: 'We match handling and transport choices to the product, destination, shelf life, and buyer requirement.'
   },
   {
     icon: Award,
@@ -23,8 +23,8 @@ const features = [
   },
   {
     icon: Leaf,
-    title: 'Fair-Trade Sourcing',
-    description: 'We pay farm-gate prices that keep growers profitable. No middlemen, no opaque margins.',
+    title: 'Responsible Sourcing',
+    description: 'We build practical sourcing relationships around product quality, consistency, and clear commercial terms.'
   },
   {
     icon: DollarSign,
