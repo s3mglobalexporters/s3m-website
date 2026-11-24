@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap for S3M Global Exporters (https://www.s3mglobalexporters.com).
+  The site is a single-page application: About, Produce, Process, and Contact
+  are in-page sections of the home page, so they are represented once here.
+  Product detail views are client-side hash routes (#/product/<slug>) and are
+  described below as image entries so their imagery is discoverable.
+-->
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://www.s3mglobalexporters.com/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/868110/pexels-photo-868110.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940</image:loc>
+      <image:title>S3M Global Exporters — fresh produce export from India and Madagascar</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/14766928/pexels-photo-14766928.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600</image:loc>
+      <image:title>Fresh Fruits — conventional and organic export fruit</image:title>
+      <image:caption>Mango, banana, pineapple, pomegranate, and a certified organic range, graded and cooled for export.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/29181503/pexels-photo-29181503.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600</image:loc>
+      <image:title>Fresh Vegetables — conventional and organic export vegetables</image:title>
+      <image:caption>Onion, potato, tomato, okra, and organic vegetables for wholesale, retail, and foodservice buyers.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/8148229/pexels-photo-8148229.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600</image:loc>
+      <image:title>Plantation Products — Madagascar vanilla and cocoa</image:title>
+      <image:caption>Madagascar Bourbon vanilla and fermented cocoa beans, with Indian coffee and tea.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/15741144/pexels-photo-15741144.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=940</image:loc>
+      <image:title>Spices &amp; Agri Products — whole, dried, and processed</image:title>
+      <image:caption>Black pepper, cardamom, turmeric, and cinnamon supplied to specification.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/8352394/pexels-photo-8352394.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600</image:loc>
+      <image:title>Fish &amp; Seafood — lobster, crab, oyster, prawns, and fish</image:title>
+      <image:caption>Lobster, crab from India and Madagascar, oyster, and prawns with documented cold chain.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/16664900/pexels-photo-16664900.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600</image:loc>
+      <image:title>Custom Sourcing — sourcing to a written buyer brief</image:title>
+      <image:caption>Products outside the standard range sourced against product, specification, volume, and destination.</image:caption>
+    </image:image>
+
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.s3mglobalexporters.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.s3mglobalexporters.com/" />
+  </url>
+
+</urlset>

@@ -1,0 +1,69 @@
+# robots.txt — https://www.s3mglobalexporters.com
+# S3M Global Exporters: fresh produce, plantation goods, spices, and seafood export.
+
+User-agent: *
+Allow: /
+
+# Build output, dependency and test artefacts should never be crawled
+# if they are ever served from the document root.
+Disallow: /dist/
+Disallow: /test-results/
+Disallow: /playwright-report/
+Disallow: /node_modules/
+Disallow: /*.map$
+
+# Assets that add crawl noise but cannot rank on their own.
+Disallow: /assets/
+
+# -----------------------------
+# Major search engines (explicit)
+# -----------------------------
+User-agent: Googlebot
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.woff2$
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Social and preview crawlers need the page plus its images.
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# -----------------------------
+# Sitemap
+# -----------------------------
+Sitemap: https://www.s3mglobalexporters.com/sitemap.xml

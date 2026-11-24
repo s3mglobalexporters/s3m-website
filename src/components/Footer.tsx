@@ -103,9 +103,9 @@ export default function Footer() {
 
         {/* Contact info */}
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mb-10 text-sm text-white/70">
-          <a href="mailto:sales@s3mglobalexporters.com" className="flex items-center gap-2 hover:text-cream-300 transition-colors duration-300">
+          <a href="mailto:info@s3mglobalexporters.com" className="flex items-center gap-2 hover:text-cream-300 transition-colors duration-300">
             <Mail className="w-4 h-4 text-olive-400" />
-            sales@s3mglobalexporters.com
+            info@s3mglobalexporters.com
           </a>
           <a href="tel:+97140000000" className="flex items-center gap-2 hover:text-cream-300 transition-colors duration-300">
             <Phone className="w-4 h-4 text-olive-400" />

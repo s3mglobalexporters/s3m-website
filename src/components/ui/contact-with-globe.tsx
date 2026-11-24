@@ -21,8 +21,8 @@ const smoothEase = [0.25, 0.1, 0.25, 1] as const;
 const CONTACT_LINKS = [
   {
     icon: Mail,
-    label: "sales@s3mglobalexporters.com",
-    href: "mailto:sales@s3mglobalexporters.com",
+    label: "info@s3mglobalexporters.com",
+    href: "mailto:info@s3mglobalexporters.com",
   },
   { icon: Phone, label: "+971 4 000 0000", href: "tel:+97140000000" },
   {
@@ -704,13 +704,7 @@ export default function ContactWithGlobe({
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    company: "",
-    country: "",
-    phone: "",
     product: "",
-    quantity: "",
-    destination: "",
-    packaging: "",
     message: "",
   });
 
@@ -722,13 +716,7 @@ export default function ContactWithGlobe({
       setFormData({
         name: "",
         email: "",
-        company: "",
-        country: "",
-        phone: "",
         product: "",
-        quantity: "",
-        destination: "",
-        packaging: "",
         message: "",
       });
     }, 4000);
@@ -886,59 +874,15 @@ export default function ContactWithGlobe({
                   </div>
                   <div className="flex flex-col gap-2">
                     <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
-                      Company
+                      Email Address *
                     </label>
                     <input
-                      type="text"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                      placeholder="Your Company Ltd."
-                      className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="john@company.com"
-                    className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
-                  />
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex flex-col gap-2">
-                    <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
-                      Country *
-                    </label>
-                    <input
-                      type="text"
-                      name="country"
+                      type="email"
+                      name="email"
                       required
-                      value={formData.country}
+                      value={formData.email}
                       onChange={handleChange}
-                      placeholder="United Arab Emirates"
-                      className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
-                      WhatsApp / Phone
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="+971 50 000 0000"
+                      placeholder="john@company.com"
                       className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
                     />
                   </div>
@@ -965,70 +909,19 @@ export default function ContactWithGlobe({
                   </select>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="flex flex-col gap-2">
-                    <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
-                      Quantity / Unit *
-                    </label>
-                    <input
-                      type="text"
-                      name="quantity"
-                      required
-                      value={formData.quantity}
-                      onChange={handleChange}
-                      placeholder="10 MT / 500 cartons"
-                      className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
-                      Destination *
-                    </label>
-                    <input
-                      type="text"
-                      name="destination"
-                      required
-                      value={formData.destination}
-                      onChange={handleChange}
-                      placeholder="Port or delivery city"
-                      className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
-                    />
-                  </div>
-                </div>
-
                 <div className="flex flex-col gap-2">
                   <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
-                    Packaging Preference
-                  </label>
-                  <input
-                    type="text"
-                    name="packaging"
-                    value={formData.packaging}
-                    onChange={handleChange}
-                    placeholder="Cartons, crates, bags, or buyer specification"
-                    className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-2.5 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 transition-all duration-200"
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label className="text-xs font-semibold tracking-widest uppercase text-gray-400">
-                    Message *
+                    Message
                   </label>
                   <textarea
                     name="message"
-                    required
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Include variety, quality grade, delivery timeline, or any compliance requirements..."
+                    placeholder="Volume, destination, or any specific requirement (optional)"
                     className="w-full bg-cream-50 border border-cream-300 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder:text-gray-400 outline-none focus:border-accent-400 focus:ring-2 focus:ring-accent-500/10 resize-none transition-all duration-200"
                   />
                 </div>
-
-                <label className="flex items-start gap-3 text-xs text-gray-500">
-                  <input type="checkbox" required className="mt-0.5 accent-olive-600" />
-                  <span>I agree to be contacted about this quote request.</span>
-                </label>
 
                 <Button className="w-fit h-11 px-8 rounded-xl font-semibold text-sm bg-accent-600 hover:bg-accent-700 text-white group">
                   Send Request

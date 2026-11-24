@@ -52,7 +52,7 @@ export default function Hero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white/90 text-sm mb-8 animate-fade-in-down">
             <span className="w-2 h-2 rounded-full bg-olive-400 animate-pulse" />
-            Quality-led sourcing · Cold-chain ready
+            Organic options · Quality-led sourcing · Cold-chain ready
           </div>
 
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 animate-fade-in-up text-balance">
@@ -60,10 +60,14 @@ export default function Hero() {
             <span className="block text-cream-300">delivered to the world.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl animate-fade-in-up">
+          <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-4 max-w-2xl animate-fade-in-up">
             S3M Global Exporters helps importers, wholesalers, distributors, retailers, and HORECA
-            buyers source export-ready Indian fruits and vegetables through a clear, dependable
-            temperature-controlled supply chain.
+            buyers source export-ready fruits and vegetables — conventional and organic — from India
+            and Madagascar, through a clear, dependable temperature-controlled supply chain.
+          </p>
+          <p className="text-sm md:text-base text-cream-300/90 leading-relaxed mb-10 max-w-2xl animate-fade-in-up">
+            Organic fruits and vegetables, Madagascar vanilla and cocoa, and seafood including
+            lobster, crab, and oyster.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
